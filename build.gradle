@@ -1,0 +1,11 @@
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'spring-cloud-utils', 'Implementation-Version': version
+	}
+	from sourceSets.main.java
+}
+
+dependencies {
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+	compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.2'
+}
